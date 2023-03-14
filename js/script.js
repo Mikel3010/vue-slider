@@ -55,6 +55,12 @@ createApp({
                 this.activeTitle = this.movie.title.length - 1;
                 this.activeText = this.movie.text.length - 1;
             }
+        },
+        selectImg(index, event){
+            console.log(index)
+            this.activeImage = index
+            document.querySelector('.thumb').classList.add('active')
+
         }
     }
 }).mount('#app')
